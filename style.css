@@ -1,0 +1,278 @@
+body{
+    font-family: sans-serif;
+    margin: 0%; 
+}
+
+header{
+    align-items: center;
+	background-image:url('assets/imagens/menina3.jpg');
+	background-position: 50% 70%;
+    /*background-color:#bf00ff;*/
+    display: flex;
+    justify-content: center;    
+    height: 280px;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.12em;   
+    font-size: 40pt;
+}
+
+
+/* Menu */
+.menu {
+    background:#bf00ff;
+	display: flex;
+	justify-content: center;   
+	text-align:center;	
+    display: block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+  
+.menu:after {
+    content: " ";
+    display: block;
+    clear: both;
+ }
+  
+.menu li a {
+	text-decoration: none;
+	display: block;
+	margin: 0;
+	background: #bf00ff;
+}
+ 
+.menu  ul  li {
+	float: left;
+}
+
+ .menu  li  a {
+	color:white;
+	padding: 15px 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 14px;
+	position: relative;
+ }
+ 
+/*sobre*/
+.sobre {
+    padding-top: 13px;
+    padding-bottom: 35px;
+	margin:2%;
+}
+.sobre-title {
+    color: #bf00ff;
+	font-family: 'Nunito Sans', sans-serif;
+	line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.sobre-texto {
+    color: #1e1f23;
+	font-family: "Poppins", sans-serif;
+}
+
+span{
+	font-style:italic;
+	font-size:10pt;
+	text-align:center;
+	justify-content:center;
+}
+
+img:hover{
+	transform:rotate(-5deg);
+}
+	
+ @media (min-width: 768px) {
+ .sobre-texto {
+    width: 80%; 
+} }
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+@media (min-width: 768px) {
+.sobre {
+    flex-direction: row;
+} }
+.sobre-bloco:nth-child(1) {
+flex: 2; }
+
+.sobre-bloco:nth-child(2) {
+align-self: center;
+flex: 1;
+margin-top: 32px; 
+}
+
+@media (min-width: 768px) {
+.sobre-bloco:nth-child(2) {
+	margin-top: 0; 
+} }
+
+.sobre-image {
+height: 216px;
+}
+
+
+/*Eventos*/
+ 
+ .titulo h2  {
+	color: #22313F;
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align:center;
+	justify-content: center;
+}
+
+	@keyframes  gallery {
+		100% {
+			opacity: 1;		}
+	}
+
+#eventos {
+	padding:1%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+h3{
+    text-align: center;
+    color:#200538;
+}
+#entre-nesse-mundo{
+    border: 4px double blueviolet;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin:15px 10%;
+    padding: 1%;
+    width: 80%;
+}
+#entre-nesse-mundo input{
+    padding: 25px;
+    /* border: 1px; */
+    width: 100%;
+}
+.grupo-formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin: 5px;
+}
+.campos-formulario{
+    padding: 5px;
+    width: 90%;
+}
+.inputs{
+    height: 1px;
+}
+.texto {
+  display: none;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+#eventos .fotos {
+	animation: gallery 0.75s ease-out 0.4s forwards;
+	margin-bottom: 0;
+	opacity: 0;
+	position: relative;
+	width: 25%;
+}		
+
+#eventos .fotos img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+#eventos .fotos:hover img {
+	transform: scale(1.075);
+}
+  
+
+#logos {
+    width: 750px;
+    position:center;
+    margin-right:60px;
+  }
+  @media only screen and (min-width: 1920px) { 
+    #logos {
+    width: 65%;
+    }
+  }
+  @media only screen and (max-width: 1024px)  {
+    #logos {
+      float: none;
+      margin-left: 60px;
+    }
+  }
+  @media only screen and (max-width: 768px)  {
+    #logos {
+      width: 735px;
+    }
+  }
+  @media only screen and (max-width: 414px) {
+    #logos {
+      width: 340px;
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+  @media only screen and (max-width: 384px) {
+  #logos {
+      margin-right: 60px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    #logos {
+      width: 330px;
+      margin-left: 0;
+    }
+  }
+  #logos>img {
+    padding: 25px 25px;
+    width: 130px;
+  }
+  @media only screen and (max-width: 768px) {
+    #logos>img {
+    padding: 25px 20px;
+    }
+  }
+  @media only screen and (max-width: 414px) {
+    #logos>img {
+    padding: 20px 12px;
+    width: 140px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    #logos>img {
+    width: 115px;
+    }
+  }
+ 
+  
